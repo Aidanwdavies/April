@@ -19,14 +19,22 @@
 """ progarm to convert Celsius to Fahrenhiet """
 
 
-def celsius_to_fahrenhiet():
+def celsius_to_fahrenhiet(celsius):
     """Convert given value to fahrenhiet"""
     fah = celsius * 9/5 +32
     return fah 
 
-
+def fahrenhiet_to_celsius(fahrenhiet):
+    """Convert given value to Celsius"""
+    celsius = fahrenhiet - 32
+    return celsius 
 
 #progarm to convert Celsius to Fahrenhiet 
 celsius = 25
 fah = celsius_to_fahrenhiet(celsius)
 print(f"{celsius} degress is {fah} Fahrenheit")
+
+
+
+celsius = fahrenhiet_to_celsius(fah)
+print(f"{fah} degress fahrenhiet is {fah} Celsius")
